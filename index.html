@@ -11,10 +11,21 @@
 </head>
 
 <body>
-    <h1>Hey,welcome to akinator</h1>
+    <h1 class="main-title">Akinator</h1>
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+    <div class="akinator-container">
+        <img id="akinator-image" src="./styles/images/1.png" alt="akinator image">
+        <div id="question-box">
+            
+        </div>
+    </div>
 
-    <button onclick="startGame()">Click me</button>
-    <div id="question-box"></div>
+    <div class="btn-container">
+        <button id="start-game" onclick="startGame()">Start Game</button>
+    </div>
+
 
     <script src="./index.js">
     </script>

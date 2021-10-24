@@ -1,12 +1,89 @@
-@font-face {font-family: "Minangkabau";
-    src: url("Minangkabau.eot"); /* IE9*/
-    src: url("Minangkabau.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("Minangkabau.woff2") format("woff2"), /* chrome、firefox */
-    url("Minangkabau.woff") format("woff"), /* chrome、firefox */
-    url("Minangkabau.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("Minangkabau.svg#Minangkabau") format("svg"); /* iOS 4.1- */
-  }
-body {
+@font-face {
   font-family: "Minangkabau";
-  background-color: aqua;
+  src: url("Minangkabau.eot"); /* IE9*/
+  src: url("Minangkabau.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("Minangkabau.woff2") format("woff2"),
+    /* chrome、firefox */ url("Minangkabau.woff") format("woff"),
+    /* chrome、firefox */ url("Minangkabau.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("Minangkabau.svg#Minangkabau") format("svg"); /* iOS 4.1- */
+}
+body {
+  background-color: cornsilk;
+}
+.main-title {
+  font-family: "Minangkabau";
+  text-align: center;
+  font-size: 8vw;
+}
+
+.akinator-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.question {
+  font-size: 2em;
+}
+.answer {
+  background-color: dodgerblue;
+  padding: 11px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 8px;
+  border: none;
+}
+
+#myProgress {
+  width: 100%;
+  border: solid grey 2px;
+}
+
+#myBar {
+  width: 1%;
+  height: 10px;
+  background: linear-gradient(90deg, green, yellow, red);
+}
+#akinator-image {
+  width: 200px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+#start-game {
+  background-color: dodgerblue;
+  padding: 11px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20vh;
+  border: none;
+}
+#question-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

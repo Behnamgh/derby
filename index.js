@@ -304,17 +304,6 @@ const people = [
     goa: "true",
   },
   {
-    name: "Manpreet",
-    role: "qa",
-    location: "goa",
-    squad: "center",
-    nationality: "INDIA",
-    beard: "true",
-    hair: "black",
-    moreThanYear: "true",
-    goa: "false",
-  },
-  {
     name: "Clemen",
     role: "devops",
     squad: "excellence",
@@ -364,6 +353,7 @@ const elements = Object.keys(people[0]).filter((i) => i !== "name");
 
 let gameResult = {
   started: "false",
+  status: 1,
   answers: {},
 };
 let lastResult = {
@@ -409,19 +399,57 @@ const findNextQuestionTopic = () => {
 const checkFunQuestion = () => {
   if (result.length === 2) {
     if (result[0].funQuestion && result[1].funQuestion) {
+      console.log("first");
       const targetIndex = randomNumberPicker(2);
-      return result[targetIndex - 1].funQuestion;
+      console.log("first", targetIndex);
+      return {
+        question: result[targetIndex - 1].funQuestion,
+        yes: result[targetIndex - 1].name,
+        no: result[targetIndex - 1 === 0 ? 0 : 1].name,
+      };
     } else if (result[0].funQuestion || result[1].funQuestion) {
-      return result[0].funQuestion || result[1].funQuestion;
+      console.log("IS", result[0].funQuestion || result[1].funQuestion);
+      return result[0].funQuestion
+        ? {
+            question: result[0].funQuestion,
+            yes: result[0].name,
+            no: result[1].name,
+          }
+        : {
+            question: result[1].funQuestion,
+            yes: result[1].name,
+            no: result[0].name,
+          };
     } else {
-      return `is he/she ${result[0].name}`;
+      return {
+        question: `is he/she ${result[0].name}`,
+        yes: result[0].name,
+        no: result[1].name,
+      };
     }
   }
   return false;
 };
+const showGuess = (currentResult) => {
+  document.getElementById("akinator-image").src = `./styles/images/happy.png`;
+
+  clearBox();
+  let questionBox = document.getElementById("question-box");
+
+  const para = document.createElement("img");
+  para.className = "profile";
+
+  document.getElementById("start-game").style.display = `flex`;
+
+  const name = document.createElement("h3");
+  name.innerHTML = currentResult[0].name;
+  para.src = `./styles/images/staffs/${currentResult[0].name}.jpeg`;
+  questionBox.appendChild(para);
+  questionBox.appendChild(name);
+};
 const checkLoop = () => {
-  if(result.length === 1){
-    console.log(result[0]);
+  if (result.length === 1) {
+    showGuess(result);
     return true;
   }
   if (lastResult.lengthNumber === result.length) {
@@ -445,35 +473,68 @@ const clearBox = () => {
   while (myNode.firstChild) {
     myNode.removeChild(myNode.lastChild);
   }
-}
+};
 const startGame = () => {
-  result = [...people]
+  result = [...people];
   gameResult = {
     started: "true",
     status: 1,
     answers: {},
   };
-  updateQuestion(findNextQuestionTopic().q);
+  document.getElementById("start-game").style.display = `none`;
+  nextRound();
 };
 const nextRound = () => {
-  console.log(result);
+  updateProgressBar();
+
   const loopHappened = checkLoop();
   if (loopHappened) return;
 
   const funQuestion = checkFunQuestion();
   if (funQuestion) {
     console.log(result);
-    console.log(funQuestion);
+    showFunQuestion(funQuestion);
     return;
   }
 
-  
   updateQuestion(findNextQuestionTopic().q);
 
   // clean dom
   // find next question and call function
 };
+const showFunQuestion = (funQuestion) => {
+  clearBox();
+
+  let questionBox = document.getElementById("question-box");
+
+  const para = document.createElement("p");
+  const node = document.createTextNode(funQuestion.question);
+  para.setAttribute("key", "fun");
+  para.className = "question";
+  para.appendChild(node);
+  questionBox.appendChild(para);
+
+  const yesBtn = document.createElement("BUTTON"); // Create a <button> element
+  yesBtn.innerHTML = "YES";
+  yesBtn.value = funQuestion.yes;
+  yesBtn.className = "answer";
+  questionBox.appendChild(yesBtn);
+  const noBtn = document.createElement("BUTTON"); // Create a <button> element
+  noBtn.innerHTML = "NO";
+  noBtn.value = funQuestion.no;
+  noBtn.className = "answer";
+  questionBox.appendChild(noBtn);
+};
+const updateProgressBar = () => {
+  document.getElementById(
+    "akinator-image"
+  ).src = `./styles/images/${gameResult.status}.png`;
+  document.getElementById("myBar").style.width = `${
+    (1 - (result.length - 1) / people.length) * 100
+  }%`;
+};
 const updateQuestion = (questionKey) => {
+  updateProgressBar();
   clearBox();
   let question = questions.find((step) => step.key === questionKey);
 
@@ -486,26 +547,31 @@ const updateQuestion = (questionKey) => {
   para.appendChild(node);
   questionBox.appendChild(para);
   const answersOption = result.map((person) => person[question.key]);
-  console.log("answersOption");
-  console.log(answersOption);
+  
   const uniqAnswer = new Set(answersOption);
-  console.log(uniqAnswer);
+  
+  const btnContainer = document.createElement("div");
   uniqAnswer.forEach((element) => {
     const btn = document.createElement("BUTTON"); // Create a <button> element
     btn.innerHTML = element !== undefined ? element : "NA";
     btn.value = element;
     btn.className = "answer";
-    questionBox.appendChild(btn);
+    btnContainer.appendChild(btn);
   });
+  questionBox.appendChild(btnContainer);
 };
 
 document.addEventListener("click", function (e) {
   if (e.target && e.target.className == "answer") {
+    if (gameResult.status < 4) {
+      gameResult.status = gameResult.status + 1;
+    }
     const userAnswer = e.target.value;
     let q = document.getElementsByClassName("question");
     let key = q[0].getAttribute("key");
-    console.log(key, userAnswer);
-    console.log(typeof key, typeof userAnswer);
+    if (key === "fun") {
+      return showGuess(result.filter((person) => person.name === userAnswer));
+    }
     result = result.filter((person) => person[key] === userAnswer);
     nextRound();
   }
