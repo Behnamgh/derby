@@ -3,7 +3,7 @@ const questions = [
     key: "goa",
     questions: [
       {
-        query: "been in goa???",
+        query: "Has he or she been in goa???",
       },
     ],
   },
@@ -11,7 +11,7 @@ const questions = [
     key: "moreThanYear",
     questions: [
       {
-        query: "year???",
+        query: "has he or she been working for HFC for more than a year???",
       },
     ],
   },
@@ -19,7 +19,7 @@ const questions = [
     key: "glass",
     questions: [
       {
-        query: "glass???",
+        query: "is he or she wearing a glass???",
       },
     ],
   },
@@ -27,7 +27,7 @@ const questions = [
     key: "nationality",
     questions: [
       {
-        query: "nationality???",
+        query: "what is his or her nationality???",
       },
     ],
   },
@@ -35,7 +35,7 @@ const questions = [
     key: "hair",
     questions: [
       {
-        query: "hair???",
+        query: "what color is his or her hair???",
       },
     ],
   },
@@ -43,7 +43,7 @@ const questions = [
     key: "beard",
     questions: [
       {
-        query: "beard???",
+        query: "Does he have a beard???",
       },
     ],
   },
@@ -51,10 +51,10 @@ const questions = [
     key: "location",
     questions: [
       {
-        query: "goa???",
+        query: "Is he working in goa office???",
       },
       {
-        query: "Berlin???",
+        query: "Is he working in Berlin office??????",
       },
     ],
   },
@@ -62,7 +62,7 @@ const questions = [
     key: "role",
     questions: [
       {
-        query: "QA???",
+        query: "Is he or she QA???",
       },
     ],
   },
@@ -70,7 +70,7 @@ const questions = [
     key: "squad",
     questions: [
       {
-        query: "squad???",
+        query: "which squad is he or she belong to???",
       },
     ],
   },
