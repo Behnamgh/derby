@@ -228,7 +228,6 @@ const people = [
     location: "goa",
     beard: "true",
     nationality: "INDIA",
-    funQuestion: "is it Rohit",
     hair: "black",
     moreThanYear: "false",
     goa: "true",
@@ -239,6 +238,7 @@ const people = [
     squad: "kitchen",
     location: "goa",
     beard: "true",
+    glass: "true",
     nationality: "INDIA",
     funQuestion: "is it Rohit",
     hair: "brown",
@@ -261,10 +261,11 @@ const people = [
     name: "Baris",
     beard: "true",
     role: "teamLead",
+    glass: "true",
     squad: "center",
     location: "berlin",
     nationality: "TURKEY",
-    funQuestion: "is he fan of fanarbaghche",
+    funQuestion: "is he a big fan of fenerbahce",
     hair: "brown",
     moreThanYear: "false",
     goa: "false",
@@ -304,10 +305,10 @@ const people = [
     goa: "true",
   },
   {
-    name: "Clemen",
+    name: "Clemens",
     role: "devops",
     squad: "excellence",
-
+    beard: "false",
     location: "berlin",
     nationality: "GERMANY",
     funQuestion: "wow",
@@ -332,6 +333,7 @@ const people = [
     location: "berlin",
     squad: "center",
     nationality: "INDIA",
+    bread:"true",
     funQuestion: "in love with partner app",
     hair: "black",
     moreThanYear: "true",
@@ -344,6 +346,60 @@ const people = [
     location: "goa",
     nationality: "INDIA",
     hair: "black",
+    moreThanYear: "false",
+    goa: "false",
+  },
+  {
+    name: "jennifer",
+    role: "Product Manager",
+    squad: "excellence",
+    location: "berlin",
+    nationality: "USA",
+    hair: "brown",
+    moreThanYear: "false",
+    goa: "false",
+  },
+  {
+    name: "tharun",
+    role: "developer",
+    squad: "kitchen",
+    location: "goa",
+    nationality: "INDIA",
+    hair: "black",
+    beard: "true",
+    moreThanYear: "false",
+    goa: "false",
+  },
+  {
+    name: "Anandu",
+    role: "developer",
+    squad: "kitchen",
+    location: "goa",
+    nationality: "INDIA",
+    hair: "black",
+    beard: "true",
+    moreThanYear: "false",
+    goa: "false",
+  },
+  {
+    name: "Frank",
+    role: "Product Manager",
+    squad: "kitchen",
+    location: "berlin",
+    nationality: "GERMANY",
+    beard: "true",
+    hair: "brown",
+    moreThanYear: "false",
+    goa: "false",
+  },
+  {
+    name: "Luis",
+    role: "Product Manager",
+    squad: "kitchen",
+    location: "berlin",
+    nationality: "GERMANY",
+    beard: "true",
+    hair: "brown",
     moreThanYear: "false",
     goa: "false",
   },
@@ -360,6 +416,35 @@ let lastResult = {
   lengthNumber: 0,
   count: 0,
 };
+
+function fadeOutAndChange(id, status) {
+  console.log("out");
+  const element = document.getElementById(id);
+  var op = 1; // initial opacity
+  var timer = setInterval(function () {
+    if (op <= 0.1) {
+      clearInterval(timer);
+      element.src = `./styles/images/${status}.png`;
+      fadeIn(element);
+    }
+    element.style.opacity = op;
+    element.style.filter = "alpha(opacity=" + op * 100 + ")";
+    op -= op * 0.2;
+  }, 50);
+}
+function fadeIn(element) {
+  var op = 0.1; // initial opacity
+  var timer = setInterval(function () {
+    console.log("in", op);
+    if (op >= 0.9) {
+      clearInterval(timer);
+    }
+    element.style.opacity = op;
+    element.style.filter = "alpha(opacity=" + op * 100 + ")";
+    op += op * 0.2;
+  }, 50);
+}
+
 const findNextQuestionTopic = () => {
   let remainingPlayer = result.length;
   let halfPlayerCount = Math.floor(remainingPlayer / 2);
@@ -430,8 +515,9 @@ const checkFunQuestion = () => {
   }
   return false;
 };
+
 const showGuess = (currentResult) => {
-  document.getElementById("akinator-image").src = `./styles/images/happy.png`;
+  fadeOutAndChange("akinator-image", "happy")
 
   clearBox();
   let questionBox = document.getElementById("question-box");
@@ -444,6 +530,8 @@ const showGuess = (currentResult) => {
   const name = document.createElement("h3");
   name.innerHTML = currentResult[0].name;
   para.src = `./styles/images/staffs/${currentResult[0].name}.jpeg`;
+  para.style.opacity = 0;
+  fadeIn(para)
   questionBox.appendChild(para);
   questionBox.appendChild(name);
 };
@@ -526,15 +614,13 @@ const showFunQuestion = (funQuestion) => {
   questionBox.appendChild(noBtn);
 };
 const updateProgressBar = () => {
-  document.getElementById(
-    "akinator-image"
-  ).src = `./styles/images/${gameResult.status}.png`;
+  fadeOutAndChange("akinator-image", gameResult.status);
   document.getElementById("myBar").style.width = `${
     (1 - (result.length - 1) / people.length) * 100
   }%`;
+  // fadeIn("akinator-image")
 };
 const updateQuestion = (questionKey) => {
-  updateProgressBar();
   clearBox();
   let question = questions.find((step) => step.key === questionKey);
 
@@ -547,9 +633,9 @@ const updateQuestion = (questionKey) => {
   para.appendChild(node);
   questionBox.appendChild(para);
   const answersOption = result.map((person) => person[question.key]);
-  
+
   const uniqAnswer = new Set(answersOption);
-  
+
   const btnContainer = document.createElement("div");
   uniqAnswer.forEach((element) => {
     const btn = document.createElement("BUTTON"); // Create a <button> element
