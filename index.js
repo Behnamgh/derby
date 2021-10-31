@@ -62,7 +62,7 @@ const questions = [
     key: "role",
     questions: [
       {
-        query: "Is he or she QA???",
+        query: "What is his or her position in HFC?!",
       },
     ],
   },
@@ -82,11 +82,11 @@ const people = [
     squad: "center",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "false",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "No",
   },
   {
     name: "shreyanesh",
@@ -94,11 +94,11 @@ const people = [
     squad: "center",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
   },
   {
     name: "srikar",
@@ -106,23 +106,11 @@ const people = [
     squad: "center",
     location: "goa",
     nationality: "INDIA",
-    beard: "false",
+    beard: "No",
     hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
-  },
-  {
-    name: "irwin",
-    role: "developer",
-    squad: "center",
-    location: "berlin",
-    nationality: "INDIA",
-    beard: "true",
-    hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
   },
   {
     name: "manpreet",
@@ -130,11 +118,11 @@ const people = [
     squad: "center",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "true",
-    goa: "false",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "No",
+    glass: "No",
   },
   {
     name: "jaideep",
@@ -142,11 +130,11 @@ const people = [
     squad: "excellence",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "true",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "Yes",
   },
   {
     name: "ishan",
@@ -154,13 +142,12 @@ const people = [
     squad: "center",
     location: "goa",
     nationality: "INDIA",
-    beard: "false",
+    beard: "No",
     hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
     funQuestion: "is he/she a big fan og NBA",
-
   },
   {
     name: "dinesh",
@@ -168,11 +155,11 @@ const people = [
     squad: "excellence",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "true",
-    goa: "false",  
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "No",
+    glass: "No",
   },
   {
     name: "abhay",
@@ -180,11 +167,11 @@ const people = [
     squad: "excellence",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "false",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "No",
+    goa: "Yes",
+    glass: "No",
   },
   {
     name: "zurez",
@@ -192,12 +179,11 @@ const people = [
     squad: "excellence",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "true",
-
+    moreThanYear: "No",
+    goa: "No",
+    glass: "Yes",
   },
   {
     name: "muzammil",
@@ -205,11 +191,11 @@ const people = [
     squad: "excellence",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
   },
   {
     name: "nihal",
@@ -217,12 +203,12 @@ const people = [
     squad: "excellence",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
-
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
+    funQuestion: "is he service owner of OPS master?",
   },
   {
     name: "behnam",
@@ -230,11 +216,11 @@ const people = [
     squad: "center",
     location: "goa",
     nationality: "IRAN",
-    beard: "false",
+    beard: "No",
     hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
     funQuestion: "is this website written by him?",
   },
   {
@@ -243,11 +229,11 @@ const people = [
     squad: "kitchen",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "false",
-    goa: "true",
-    glass: "true",
+    moreThanYear: "No",
+    goa: "Yes",
+    glass: "Yes",
   },
   {
     name: "Rohit",
@@ -255,11 +241,11 @@ const people = [
     squad: "kitchen",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "brown",
-    moreThanYear: "false",
-    goa: "true",
-    glass: "true"
+    moreThanYear: "No",
+    goa: "Yes",
+    glass: "Yes",
   },
   {
     name: "Sam",
@@ -267,12 +253,13 @@ const people = [
     squad: "excellence",
     location: "berlin",
     nationality: "USA",
-    beard: "true",
+    beard: "Yes",
     hair: "bald",
-    moreThanYear: "true",
-    goa: "false",
-    glass: "false",
-    funQuestion: "is he going to pay 30 euros to the winner of this competition???",
+    moreThanYear: "Yes",
+    goa: "No",
+    glass: "No",
+    funQuestion:
+      "is he going to pay 30 euros to the winner of this competition???",
   },
   {
     name: "Baris",
@@ -280,11 +267,11 @@ const people = [
     squad: "center",
     location: "berlin",
     nationality: "TURKEY",
-    beard: "true",
+    beard: "Yes",
     hair: "brown",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "true",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "Yes",
     funQuestion: "is he a big fan of fenerbahce",
   },
   {
@@ -292,11 +279,11 @@ const people = [
     role: "cto",
     location: "goa",
     nationality: "GERMANY",
-    beard: "false",
+    beard: "No",
     hair: "brown",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
     funQuestion: "is he a big fan of hertha berlin?!",
   },
   {
@@ -305,11 +292,11 @@ const people = [
     squad: "center",
     location: "goa",
     nationality: "INDIA",
-    beard: "false",
+    beard: "No",
     hair: "black",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "false",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "No",
   },
   {
     name: "Ronald",
@@ -317,11 +304,11 @@ const people = [
     squad: "center",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
     funQuestion: "is he cycler",
   },
   {
@@ -330,11 +317,11 @@ const people = [
     squad: "excellence",
     location: "berlin",
     nationality: "GERMANY",
-    beard: "false",
+    beard: "No",
     hair: "brown",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
     funQuestion: "wow",
   },
   {
@@ -343,12 +330,11 @@ const people = [
     squad: "kitchen",
     location: "berlin",
     nationality: "INDIA",
-    bread:"true",
+    bread: "Yes",
     hair: "black",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "true",
-
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "Yes",
   },
   {
     name: "Irwin",
@@ -357,11 +343,11 @@ const people = [
     location: "berlin",
     nationality: "INDIA",
     hair: "black",
-    bread:"true",
-    moreThanYear: "true",
-    goa: "true",
-    glass: "false",
-    funQuestion: "in love with partner app",
+    bread: "Yes",
+    moreThanYear: "Yes",
+    goa: "Yes",
+    glass: "No",
+    funQuestion: "is he in love with partner app",
   },
   {
     name: "Mukesh",
@@ -370,12 +356,11 @@ const people = [
     location: "goa",
     nationality: "INDIA",
     hair: "black",
-    beard: "true",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "false",
-    funQuestion: "has he had a tach talk presentation about HELM recently?",
-
+    beard: "Yes",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "No",
+    funQuestion: "has he had a tech talk presentation about HELM recently?",
   },
   {
     name: "jennifer",
@@ -383,11 +368,11 @@ const people = [
     squad: "excellence",
     location: "berlin",
     nationality: "USA",
-    beard: "false",
+    beard: "No",
     hair: "brown",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "false",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "No",
   },
   {
     name: "tharun",
@@ -395,11 +380,11 @@ const people = [
     squad: "kitchen",
     location: "goa",
     nationality: "INDIA",
-    beard: "true",
+    beard: "Yes",
     hair: "black",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "false",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "No",
   },
   {
     name: "Anandu",
@@ -408,10 +393,10 @@ const people = [
     location: "goa",
     nationality: "INDIA",
     hair: "black",
-    beard: "true",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "false",
+    beard: "Yes",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "No",
   },
   {
     name: "Frank",
@@ -419,12 +404,11 @@ const people = [
     squad: "kitchen",
     location: "berlin",
     nationality: "GERMANY",
-    beard: "true",
+    beard: "Yes",
     hair: "brown",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "false",
-
+    moreThanYear: "No",
+    goa: "No",
+    glass: "No",
   },
   {
     name: "Luis",
@@ -432,18 +416,19 @@ const people = [
     squad: "kitchen",
     location: "berlin",
     nationality: "GERMANY",
-    beard: "true",
+    beard: "No",
     hair: "brown",
-    moreThanYear: "false",
-    goa: "false",
-    glass: "false",
+    moreThanYear: "No",
+    goa: "No",
+    glass: "No",
   },
 ];
 let result = [];
 const elements = Object.keys(people[0]).filter((i) => i !== "name");
+const randomNumberPicker = (max) => Math.floor(Math.random() * max + 1);
 
 let gameResult = {
-  started: "false",
+  started: "No",
   status: 1,
   answers: {},
 };
@@ -453,7 +438,6 @@ let lastResult = {
 };
 
 function fadeOutAndChange(id, status) {
-  console.log("out");
   const element = document.getElementById(id);
   var op = 1; // initial opacity
   var timer = setInterval(function () {
@@ -470,7 +454,6 @@ function fadeOutAndChange(id, status) {
 function fadeIn(element) {
   var op = 0.1; // initial opacity
   var timer = setInterval(function () {
-    console.log("in", op);
     if (op >= 0.9) {
       clearInterval(timer);
     }
@@ -519,16 +502,14 @@ const findNextQuestionTopic = () => {
 const checkFunQuestion = () => {
   if (result.length === 2) {
     if (result[0].funQuestion && result[1].funQuestion) {
-      console.log("first");
       const targetIndex = randomNumberPicker(2);
-      console.log("first", targetIndex);
       return {
         question: result[targetIndex - 1].funQuestion,
         yes: result[targetIndex - 1].name,
         no: result[targetIndex - 1 === 0 ? 0 : 1].name,
       };
     } else if (result[0].funQuestion || result[1].funQuestion) {
-      console.log("IS", result[0].funQuestion || result[1].funQuestion);
+
       return result[0].funQuestion
         ? {
             question: result[0].funQuestion,
@@ -540,19 +521,20 @@ const checkFunQuestion = () => {
             yes: result[1].name,
             no: result[0].name,
           };
-    } else {
-      return {
-        question: `is he/she ${result[0].name}`,
-        yes: result[0].name,
-        no: result[1].name,
-      };
     }
+    //  else {
+    //   return {
+    //     question: `is he/she ${result[0].name}`,
+    //     yes: result[0].name,
+    //     no: result[1].name,
+    //   };
+    // }
   }
   return false;
 };
 
 const showGuess = (currentResult) => {
-  fadeOutAndChange("akinator-image", "happy")
+  fadeOutAndChange("akinator-image", "happy");
 
   clearBox();
   let questionBox = document.getElementById("question-box");
@@ -566,7 +548,7 @@ const showGuess = (currentResult) => {
   name.innerHTML = currentResult[0].name;
   para.src = `./styles/images/staffs/${currentResult[0].name}.jpeg`;
   para.style.opacity = 0;
-  fadeIn(para)
+  fadeIn(para);
   questionBox.appendChild(para);
   questionBox.appendChild(name);
 };
@@ -600,7 +582,7 @@ const clearBox = () => {
 const startGame = () => {
   result = [...people];
   gameResult = {
-    started: "true",
+    started: "Yes",
     status: 1,
     answers: {},
   };
@@ -608,6 +590,7 @@ const startGame = () => {
   nextRound();
 };
 const nextRound = () => {
+
   updateProgressBar();
 
   const loopHappened = checkLoop();
@@ -615,7 +598,7 @@ const nextRound = () => {
 
   const funQuestion = checkFunQuestion();
   if (funQuestion) {
-    console.log(result);
+
     showFunQuestion(funQuestion);
     return;
   }
@@ -670,11 +653,26 @@ const updateQuestion = (questionKey) => {
   const answersOption = result.map((person) => person[question.key]);
 
   const uniqAnswer = new Set(answersOption);
+  if (uniqAnswer.size === 1) {
+    if (result.length === 2) {
+      showFunQuestion({
+        question: `is he/she ${result[0].name}`,
+        yes: result[0].name,
+        no: result[1].name,
+      });
+      return;
+    } else {
+      uniqAnswer.forEach((answer) => {
+        result = result.filter((person) => person[question.key] === answer);
+        nextRound();
+      })
+    }
+  }
 
   const btnContainer = document.createElement("div");
   uniqAnswer.forEach((element) => {
     const btn = document.createElement("BUTTON"); // Create a <button> element
-    btn.innerHTML = element !== undefined ? element : "NA";
+    btn.innerHTML = element !== undefined ? element : "N/A";
     btn.value = element;
     btn.className = "answer";
     btnContainer.appendChild(btn);
@@ -687,7 +685,9 @@ document.addEventListener("click", function (e) {
     if (gameResult.status < 4) {
       gameResult.status = gameResult.status + 1;
     }
-    const userAnswer = e.target.value;
+    const userAnswer =
+      e.target.value === "undefined" ? undefined : e.target.value;
+
     let q = document.getElementsByClassName("question");
     let key = q[0].getAttribute("key");
     if (key === "fun") {
