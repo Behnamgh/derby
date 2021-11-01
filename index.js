@@ -3,7 +3,7 @@ const questions = [
     key: "goa",
     questions: [
       {
-        query: "Has he or she been in goa???",
+        query: "Has he/she been in goa???",
       },
     ],
   },
@@ -11,7 +11,7 @@ const questions = [
     key: "moreThanYear",
     questions: [
       {
-        query: "has he or she been working for HFC for more than a year???",
+        query: "has he/she been working for HFC for more than a year???",
       },
     ],
   },
@@ -19,7 +19,7 @@ const questions = [
     key: "glass",
     questions: [
       {
-        query: "is he or she wearing a glass???",
+        query: "is he/she wearing a  eye glass???",
       },
     ],
   },
@@ -27,7 +27,7 @@ const questions = [
     key: "nationality",
     questions: [
       {
-        query: "what is his or her nationality???",
+        query: "what is his/her nationality???",
       },
     ],
   },
@@ -35,7 +35,7 @@ const questions = [
     key: "hair",
     questions: [
       {
-        query: "what color is his or her hair???",
+        query: "what color is his/her hair???",
       },
     ],
   },
@@ -51,10 +51,10 @@ const questions = [
     key: "location",
     questions: [
       {
-        query: "Is he working in goa office???",
+        query: "Is he/she working in goa office???",
       },
       {
-        query: "Is he working in Berlin office??????",
+        query: "Is he/she working in Berlin office??????",
       },
     ],
   },
@@ -62,7 +62,7 @@ const questions = [
     key: "role",
     questions: [
       {
-        query: "What is his or her position in HFC?!",
+        query: "What is his/her role in HFC?!",
       },
     ],
   },
@@ -70,7 +70,7 @@ const questions = [
     key: "squad",
     questions: [
       {
-        query: "which squad is he or she belong to???",
+        query: "which squad is he/she belong to???",
       },
     ],
   },
@@ -330,7 +330,7 @@ const people = [
     squad: "kitchen",
     location: "berlin",
     nationality: "INDIA",
-    bread: "Yes",
+    beard: "Yes",
     hair: "black",
     moreThanYear: "Yes",
     goa: "Yes",
@@ -343,7 +343,7 @@ const people = [
     location: "berlin",
     nationality: "INDIA",
     hair: "black",
-    bread: "Yes",
+    beard: "Yes",
     moreThanYear: "Yes",
     goa: "Yes",
     glass: "No",
