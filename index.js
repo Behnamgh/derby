@@ -272,7 +272,7 @@ const people = [
     moreThanYear: "No",
     goa: "No",
     glass: "Yes",
-    funQuestion: "is he a big fan of fenerbahce",
+    funQuestion: "is he a big fan of Beşiktaş?",
   },
   {
     name: "Janosch",
@@ -296,6 +296,17 @@ const people = [
     hair: "black",
     moreThanYear: "No",
     goa: "No",
+    glass: "No",
+  },
+  {
+    name: "Milosha",
+    role: "HR",
+    location: "goa",
+    nationality: "INDIA",
+    beard: "No",
+    hair: "black",
+    moreThanYear: "Yes",
+    goa: "Yes",
     glass: "No",
   },
   {
