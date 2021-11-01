@@ -147,7 +147,7 @@ const people = [
     moreThanYear: "Yes",
     goa: "Yes",
     glass: "No",
-    funQuestion: "is he/she a big fan og NBA",
+    funQuestion: "is he/she a big fan of NBA",
   },
   {
     name: "Dinesh",
