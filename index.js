@@ -77,7 +77,7 @@ const questions = [
 ];
 const people = [
   {
-    name: "noor",
+    name: "Noor",
     role: "developer",
     squad: "center",
     location: "goa",
@@ -89,7 +89,7 @@ const people = [
     glass: "No",
   },
   {
-    name: "shreyanesh",
+    name: "Shreyanesh",
     role: "developer",
     squad: "center",
     location: "goa",
@@ -101,7 +101,7 @@ const people = [
     glass: "No",
   },
   {
-    name: "srikar",
+    name: "Srikar",
     role: "developer",
     squad: "center",
     location: "goa",
@@ -113,7 +113,7 @@ const people = [
     glass: "No",
   },
   {
-    name: "manpreet",
+    name: "Manpreet",
     role: "qa",
     squad: "center",
     location: "goa",
@@ -125,7 +125,7 @@ const people = [
     glass: "No",
   },
   {
-    name: "jaideep",
+    name: "Jaideep",
     role: "qa",
     squad: "excellence",
     location: "goa",
@@ -137,7 +137,7 @@ const people = [
     glass: "Yes",
   },
   {
-    name: "ishan",
+    name: "Ishan",
     role: "developer",
     squad: "center",
     location: "goa",
@@ -150,7 +150,7 @@ const people = [
     funQuestion: "is he/she a big fan og NBA",
   },
   {
-    name: "dinesh",
+    name: "Dinesh",
     role: "qa",
     squad: "excellence",
     location: "goa",
@@ -162,7 +162,7 @@ const people = [
     glass: "No",
   },
   {
-    name: "abhay",
+    name: "Abhay",
     role: "developer",
     squad: "excellence",
     location: "goa",
@@ -174,7 +174,7 @@ const people = [
     glass: "No",
   },
   {
-    name: "zurez",
+    name: "Zurez",
     role: "developer",
     squad: "excellence",
     location: "goa",
@@ -186,7 +186,7 @@ const people = [
     glass: "Yes",
   },
   {
-    name: "muzammil",
+    name: "Muzammil",
     role: "developer",
     squad: "excellence",
     location: "goa",
@@ -198,7 +198,7 @@ const people = [
     glass: "No",
   },
   {
-    name: "nihal",
+    name: "Nihal",
     role: "developer",
     squad: "excellence",
     location: "goa",
@@ -211,7 +211,7 @@ const people = [
     funQuestion: "is he service owner of OPS master?",
   },
   {
-    name: "behnam",
+    name: "Behnam",
     role: "developer",
     squad: "center",
     location: "goa",
@@ -224,7 +224,7 @@ const people = [
     funQuestion: "is this website written by him?",
   },
   {
-    name: "rahul",
+    name: "Rahul",
     role: "qa",
     squad: "kitchen",
     location: "goa",
@@ -363,7 +363,7 @@ const people = [
     funQuestion: "has he had a tech talk presentation about HELM recently?",
   },
   {
-    name: "jennifer",
+    name: "Jennifer",
     role: "Product Manager",
     squad: "excellence",
     location: "berlin",
@@ -375,7 +375,7 @@ const people = [
     glass: "No",
   },
   {
-    name: "tharun",
+    name: "Tharun",
     role: "developer",
     squad: "kitchen",
     location: "goa",
