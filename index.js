@@ -321,8 +321,7 @@ const people = [
     hair: "brown",
     moreThanYear: "Yes",
     goa: "Yes",
-    glass: "No",
-    funQuestion: "wow",
+    glass: "No"
   },
   {
     name: "Ketan",
