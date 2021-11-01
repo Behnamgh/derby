@@ -254,7 +254,7 @@ const people = [
     location: "berlin",
     nationality: "USA",
     beard: "Yes",
-    hair: "bald",
+    hair: "Short Hair",
     moreThanYear: "Yes",
     goa: "No",
     glass: "No",
