@@ -505,7 +505,7 @@ const checkFunQuestion = () => {
       return {
         question: result[targetIndex - 1].funQuestion,
         yes: result[targetIndex - 1].name,
-        no: result[targetIndex - 1 === 0 ? 0 : 1].name,
+        no: result[targetIndex - 1 === 0 ? 1 : 0].name,
       };
     } else if (result[0].funQuestion || result[1].funQuestion) {
 
