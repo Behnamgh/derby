@@ -597,7 +597,9 @@ const startGame = () => {
     answers: {},
   };
   document.getElementById("start-game").style.display = `none`;
-  nextRound();
+  const fistQuestion = randomNumberPicker(questions.length)
+  updateQuestion(questions[fistQuestion-1].key);
+
 };
 const nextRound = () => {
 
